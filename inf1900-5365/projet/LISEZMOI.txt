@@ -1,0 +1,135 @@
+ PROJET INF1900 - Équipe 5365
+
+
+ --> Hiérarchie des fichiers pour le projet à la fin de ce fichier
+
+----------------------------------------------------------------------
+-                         Méthode pour Make                          -
+----------------------------------------------------------------------
+
+1. Ouvrir un terminal dans le répertoire /projet
+2. Faire la commande "make" dans le terminal
+
+----------------------------------------------------------------------
+-                       Aide à la correction                         -
+----------------------------------------------------------------------
+
+La majorité des fonctions pour le projet se retrouve dans les
+fichiers suivants :
+
+/projet/lib_dir/affichage.hpp
+/projet/lib_dir/atmel.hpp
+/projet/lib_dir/bouton.hpp
+/projet/lib_dir/broche.hpp
+/projet/lib_dir/chrono.hpp
+/projet/lib_dir/clavier.hpp
+/projet/lib_dir/manoeuvre.hpp
+/projet/lib_dir/moteurs.hpp
+/projet/lib_dir/robot.hpp
+/projet/lib_dir/temps.hpp
+
+Le reste des fichiers est surtout du code servant à mieux utiliser 
+les composantes du Atmel. Certains sont très proche de 
+l'ordinateur et peuvent être plus dur à comprendre.
+
+ -- Toute les fonctions ont une descripption dans leur fichier .hpp
+    De ce fait, s'il n'y a pas de commentaire à l'intérieur d'une
+    fonction/méthode d'un .cpp, c'est que la description de la
+    fonction/méthode explique avec assez de détail ce qu'elle fait
+    pour comprendre le code.
+
+ -- Il y une variable pour tous les chiffres dans le début de
+    la fonction/méthode ou lorsque nous pouvons les allouer
+    le plus tôt possible.
+
+ -- Les enumérations (enum) se retrouvent toujours tout en haut des
+    fichier header (.h) si vous voulez voir les possibilités de
+    ceux-ci.
+
+----------------------------------------------------------------------
+-                            Hiérarchie                              -
+----------------------------------------------------------------------
+
+root
+|
++---+ projet
+    |
+    +---+ exec_dir
+    |   |
+    |   +---> circuit.simu
+    |   |
+    |   +---> main.cpp
+    |
+    +---+ lib_dir
+    |   |
+    |   +---+ include
+    |   |   |
+    |   |   +---> affichage.hpp
+    |   |   |
+    |   |   +---> atmel.hpp
+    |   |   |
+    |   |   +---> bouton.hpp
+    |   |   |
+    |   |   +---> broche.hpp
+    |   |   |
+    |   |   +---> can.hpp
+    |   |   |
+    |   |   +---> chrono.hpp
+    |   |   |
+    |   |   +---> clavier.hpp
+    |   |   |
+    |   |   +---> debug.hpp
+    |   |   |
+    |   |   +---> eeprom.hpp
+    |   |   |
+    |   |   +---> interruption.hpp
+    |   |   |
+    |   |   +---> manoeuvre.hpp
+    |   |   |
+    |   |   +---> moteurs.hpp
+    |   |   |
+    |   |   +---> robot.hpp
+    |   |   |
+    |   |   +---> temps.hpp
+    |   |   |
+    |   |   +---> timer.hpp
+    |   |   |
+    |   |   +---> usart.hpp
+    |   |
+    |   +---> Makefile
+    |   |
+    |   +---> affichage.cpp
+    |   |
+    |   +---> atmel.cpp
+    |   |
+    |   +---> bouton.cpp
+    |   |
+    |   +---> broche.cpp
+    |   |
+    |   +---> can.cpp
+    |   |
+    |   +---> chrono.cpp
+    |   |
+    |   +---> clavier.cpp
+    |   |
+    |   +---> debug.cpp
+    |   |
+    |   +---> eeprom.cpp
+    |   |
+    |   +---> interruption.cpp
+    |   |
+    |   +---> manoeuvre.cpp
+    |   |
+    |   +---> moteurs.cpp
+    |   |
+    |   +---> robot.cpp
+    |   |
+    |   +---> temps.cpp
+    |   |
+    |   +---> timer.cpp
+    |   |
+    |   +---> usart.cpp
+    |
+    +---> LISEZMOI.txt
+    |
+    +---> Makefile

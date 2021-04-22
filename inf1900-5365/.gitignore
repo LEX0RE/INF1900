@@ -1,0 +1,8 @@
+*.elf
+*.o
+*.elf.map
+*.hex
+*.d
+*.a
+.vscode
+circuit_backup.simu
